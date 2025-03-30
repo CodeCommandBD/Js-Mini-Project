@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini ecommerce site</title>
+    <style>
+        body{
+            background: #333;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            width: 100%;
+        }
+        .container h1, h2{
+            text-align: center;
+        }
+        .products{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .product{
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px;
+            background: rgba(141, 140, 140, 0.531);
+            width: 25%;
+        }
+        button{
+            background: tomato;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        #buyBtn{
+            background: green;
+        }
+        .cart{
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        .cart ul{
+            list-style: none;
+            padding: 0 ;
+        }
+        .cart ul li{
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+         <h1>Mini E-commerce site</h1>
+         <div class="products">
+            <div class="product">
+                <h3> iPhone 16</h3>
+                <p>$150</p>
+                <button class="addCart" data-name="iPhone 16" data-price="150">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3> Galaxy s21</h3>
+                <p>$200</p>
+                <button class="addCart" data-name="Galaxy s21" data-price="200">Add to Cart</button>
+            </div>
+            <div class="product">
+                <h3>Pixel 7pro</h3>
+                <p>$120</p>
+                <button class="addCart" data-name="Pixel 7pro" data-price="120">Add to Cart</button>
+            </div>
+         </div>
+         <h2>Shoping Cart</h2>
+         <div class="cart">
+            <ul id="cart-item">
+
+            </ul>
+            <p>Total: $ <span id="totalPrice"></span></p>
+            <button id="buyBtn">Buy Now</button>
+         </div>
+         
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

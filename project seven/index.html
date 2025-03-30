@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background: rgb(59, 59, 59);
+        }
+        .container{
+            text-align: center;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 300px;
+        }
+        .input-group{
+            margin-bottom: 20px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .input-group input{
+            padding: 10px;
+            width: calc(100% - 20px);
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        button{
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            background: white;
+        }
+        button:hover{
+            background: #e0e0e0;
+        }
+        #show{
+            margin-top: 20PX;
+            font-size: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   
+    <div class="container">
+        <h1>BMI CALCULATOR</h1>
+        <div class="input-group">
+            <label for="age">Age:</label>
+            <input type="number" name="" id="age" placeholder="Enter your age">
+        </div>
+        <div class="input-group">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" name="" id="weight" placeholder="Enter your weight">
+        </div>
+        <div class="input-group">
+            <label for="height">Height (cm):</label>
+            <input type="number" name="" id="height" placeholder="Enter your height">
+        </div>
+        <button onclick="calculateBMI()">Calculate BMI</button>
+        <div id="show">
+
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

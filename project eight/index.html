@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #333;
+            margin: 0;
+        }
+        .container{
+            background: #fff;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            width: 500px;
+           
+        }
+        h1{
+            margin-bottom: 20px;
+        }
+        button{
+            text-align: center;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 6px;
+            color: white;
+            background: palevioletred;
+            cursor: pointer;
+        }
+        input{
+            padding: 10px;
+            width: 80%;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Recipe</h1>
+        <input type="text"  id="searchBox" placeholder="Search for a Recipe...">
+        <button onclick="searchBtn()">Search</button>
+        <div id="show">
+            
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
